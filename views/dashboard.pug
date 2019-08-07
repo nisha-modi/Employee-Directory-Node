@@ -1,0 +1,63 @@
+extends layout
+
+block variables
+  - var title = "Dashboard"
+
+block content
+
+  .div.create-post
+    h2 Create a Post
+    <br>
+    form(method="post")
+      .form-group
+        label(for="firstName") First Name
+        <br>
+        input.form-control#firstName(type="text", name="firstName", placeholder="First Name", required)
+        <br>
+        label(for="lastName") Last Name
+        <br>
+        input.form-control#lastName(type="text", name="lastName", placeholder="Last Name", required)
+        <br>
+        div
+          label(for="role") Role
+          <br>
+          select.menu#role(name='role' size='4', required)
+            option(value='Lackey' name='role') Lackey
+            option(value='Manager' name='role') Manager
+            option(value='VP' name='role') VP
+            option(value='CEO' name='role') CEO
+        <br>
+        button.btn.btn-primary.submit-btn(type="submit") Submit
+        <br>
+
+  if post != undefined
+    <br>
+    .alert.alert-success(role="alert").text-center
+      p Your new employee was added successfully!
+  <br>
+  <hr>
+  .div
+    h2.your-posts Your Employee
+    <br>
+    ul.edit
+      each post in posts
+        div.your-posts-style
+
+
+          block content
+          - var name = post.firstName + " " + post.lastName
+          h2.text-center= name
+
+          .div
+            .body Role: !{post.role} 
+            <br>
+            <br>
+            .div
+              form.hidden(method="post", action="/" + post.slug + "/delete")
+                button.btn.delete Delete
+            <br>
+            <br>
+            .div
+              a(href="http://localhost:3000/"+post.slug+"/edit")
+                button.btn Edit
+

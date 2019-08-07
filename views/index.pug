@@ -1,0 +1,26 @@
+extends layout
+
+block variables
+  - var title = "Home"
+
+block content
+  if posts == null
+    p.empty.text-center Uh oh. Looks like everyone went home early!
+
+  .posts
+    ul
+      each post in posts
+        li.post-style
+          .row
+            block variables
+          - var name = post.firstName + " " + post.lastName
+          - var role = post.role
+
+          block content
+            h2.text-center= name
+
+            .row
+              .offset-sm-2.col-sm-8
+                .body Role: !{post.role} 
+
+

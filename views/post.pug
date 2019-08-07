@@ -1,0 +1,14 @@
+extends layout
+
+block variables
+  - var name = post.firstName + " " + post.lastName
+  - var role = post.role
+
+block content
+  h2.text-center= name
+
+  .row
+    .offset-sm-2.col-sm-8
+      .body Role: !{post.role} 
+
+

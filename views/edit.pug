@@ -1,0 +1,27 @@
+extends layout
+
+block variables
+  - var name = post.firstName + " " + post.LastName
+
+block content
+  h2.text-center Edit Post
+
+  .row
+    .offset-sm-2.col-sm-8
+      form(method="post")
+        .form-group
+          label(for="firstName") First Name
+          input.form-control#firstName(type="text", name="firstName", value=post.firstName, required)
+          label(for="lastName") Last Name
+          input.form-control#firstName(type="text", name="lastName", value=post.lastName, required)
+          select#role(name='role' size='4', required)
+            option(value='Lackey' name='role') 
+            option(value='Manager' name='role') 
+            option(value='VP' name='role')
+            option(value='CEO' name='role') 
+        button.btn.btn-primary.submit-btn(type="submit") Update
+
+  .row
+    .offset-sm-2.col-sm-8
+      .body !{post.body}
+

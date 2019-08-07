@@ -1,0 +1,188 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #60ac44!important;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+  margin-top: 1em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.nav {
+  float: right;
+}
+
+.menu {
+  width: 100%!important;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.post-style {
+  width: 300px;
+  margin: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: white;
+  background-color: #60ac44;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.label {
+  font-size: 20px!important;
+  font-weight: bold!important;
+  padding-top: 10px!important;
+}
+
+.your-posts-style {
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: white;
+  background-color: #60ac44;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.create-post {
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px;
+  color: white;
+  background-color: #60ac44;
+  border-radius: 5px;
+}
+
+.posts ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+hr {
+  border-color: #60ac44;
+  width: 30%;
+}
+
+.posts a {
+  font-size: 1.3em;
+  text-decoration: underline;
+  color: #60ac44;
+}
+
+.posts span {
+  font-size: 1.1em;
+  float: right;
+}
+
+.empty {
+  font-size: 2em;
+  margin-bottom: 5em;
+}
+
+.container {
+  padding-top: 2em;
+}
+
+.unauthenticated p {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+hr.bottom {
+  margin-top: 4em;
+}
+
+.submit-btn {
+  float: right;
+  color:  #60ac44;
+  background-color: white;
+}
+
+.alert p {
+  font-size: 1.1em;
+  background-color: none;
+  color:  #60ac44;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.author {
+  font-size: 1.2em;
+  margin-top: 2em;
+}
+
+.body {
+  margin-top: 2em;
+  font-size: 1.2em;
+}
+
+.edit {
+  padding-left: 0;
+}
+
+.edit a {
+  text-decoration: underline;
+  color: #60ac44;
+  font-size: 1.5em;
+}
+
+.edit li {
+  list-style-type: none;
+  line-height: 2.5em;
+}
+
+button {
+  width: 100px;
+  margin: 0 auto;
+  color:  #60ac44;
+  background-color: white;
+  text-align: center;
+}
+
+.your-posts {
+  margin-top: 2em;
+  color: #60ac44;
+  font-weight: bold;
+}
+
+.hidden {
+  display: inline;
+}
+
+.header {
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 40px;
+  color: #60ac44;
+}
+
+.navigation {
+  color: #60ac44;
+  font-weight: bold;
+  font-size: 20px;
+  height: 50px;
+  border-top: 1px #60ac44;
+  border-bottom: 1px #60ac44;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  align-content: center;
+  width: fit-content;
+}
